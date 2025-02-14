@@ -16,7 +16,7 @@ namespace InterfacesGraficasinamicas
     {
         private string[] imageFiles;
         private FlowLayoutPanel flowLayoutPanel;
-        private readonly string imageFolderPath = @"C:\Users\GL66\Desktop\autosModelo"; //CARPETA DE IMAGENES
+        private readonly string imageFolderPath = @"C:\Users\GL66\Desktop\autosModelo"; //CARPETA DE IMAGENES 
 
         public Form1()
         {
@@ -126,13 +126,13 @@ namespace InterfacesGraficasinamicas
         }
         /* private void DisplayThumbnails()
          {
-             foreach (string imagePath in imageFiles)
+             forech (string imagePath in imageFiles)
              {
                  try
                  {
                      using (Image originalImage = Image.FromFile(imagePath))
                      {
-                         PictureBox pictureBox = new PictureBox
+                         PictureBox pictureBox = new Picturebox
                          {
                              Image = CreateThumbnail(originalImage),
                              SizeMode = PictureBoxSizeMode.Zoom,
@@ -141,12 +141,6 @@ namespace InterfacesGraficasinamicas
                              Margin = new Padding(5),
                              Tag = imagePath
                          };
-
-                         pictureBox.Click += PictureBox_Click;
-                         flowLayoutPanel.Controls.Add(pictureBox);
-                     }
-                 }
-                 catch (Exception ex)
                  {
                      MessageBox.Show($"Errorcargar la imagen {Path.GetFileName(imagePath)}: {ex.Message}";
                  }
